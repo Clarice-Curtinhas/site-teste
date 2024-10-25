@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divas e Esfihas</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="topo">
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="./index.html">Página inicial</a>
+                    </li>
+
+                    <li>
+                        <a href="./playlists.html" class="selecionado">Playlists</a>
+                    </li>
+
+                    <li>
+                        <a href="./info.html">Informações</a>
+                    </li>
+
+                    <li>
+                        <a href="./finais.html">Considerações finais</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="logo">
+
+                <h5>Divas & Esfihas</h5>
+
+            </div>
+
+        </div>
+
+        <div class="conteudo">
+            <div class="player">
+
+                <div class="flip" id="alice">
+                    <div class="flip-dentro">
+                        <div class="flip-frente">
+                            <img class="foto" src="assets/imagens/Alice.png" alt="">
+                        </div>
+
+                        <div class="flip-verso">
+                            <img class="foto" src="assets/imagens/arte-rapa.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quadrado">
+                    <img class="star6" src="assets/imagens/Star 4.png" alt="">
+
+                    <div class="musica">
+
+                        <img id="capasAlice" src="assets/imagens/Duvet-boa.png" alt="">
+                        
+                        <div class="nome">
+                            <h3 id="nomeMusicaAlice">Duvet</h3>
+                            <h6 id="nomeCantorAlice">bôa</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="objetos">
+                        <div class="linha-musica"></div>
+
+                        <div class="botoes-player">
+                            <div class="pula-esquerda" onclick="BotaoAlice('capasAlice', 'nomeMusicaAlice', 'nomeCantorAlice', -1)">
+                                <div class="seta1"></div>
+                                <div class="seta2"></div>
+                            </div>
+
+                            <div class="play">
+                                <div class="ret1"></div>
+                                <div class="ret2"></div>
+                            </div>
+
+                            <div class="pula-direita" onclick="BotaoAlice('capasAlice', 'nomeMusicaAlice', 'nomeCantorAlice', 1)">
+                                <div class="seta3"></div>
+                                <div class="seta4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divisor"></div>
+
+            <div class="player" id="Impar">
+
+                <div class="flip-cat">
+                    <div class="flip-dentro">
+                        <div class="flip-frente">
+                            <img class="foto" src="assets/imagens/Catarina.jpeg" alt="">
+                        </div>
+
+                        <div class="flip-verso">
+                            <img class="foto" src="assets/imagens/rita-lee.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quadrado">
+                    <img class="star6" src="assets/imagens/Star 4.png" alt="">
+
+                    <div class="musica">
+
+                        <img id="capasCat" src="assets/imagens/Sabrina-short'nsweet.png" alt="">
+                        
+                        <div class="nome">
+                            <h3 id="nomeMusicaCat">Taste</h3>
+                            <h6 id="nomeCantorCat">Sabrina Carpenter</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="objetos">
+                        <div class="linha-musica"></div>
+
+                        <div class="botoes-player">
+                            <div class="pula-esquerda" onclick="BotaoCat('capasCat', 'nomeMusicaCat', 'nomeCantorCat', -1)">
+                                <div class="seta1"></div>
+                                <div class="seta2"></div>
+                            </div>
+
+                            <div class="play">
+                                <div class="ret1"></div>
+                                <div class="ret2"></div>
+                            </div>
+
+                            <div class="pula-direita" onclick="BotaoCat('capasCat', 'nomeMusicaCat', 'nomeCantorCat', 1)">
+                                <div class="seta3"></div>
+                                <div class="seta4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divisor"></div>
+
+            <div class="player">
+
+                <div class="flip" id="cla" onclick="vasco('shrek')">
+                    <div class="flip-dentro">
+                        <div class="flip-frente">
+                            <img class="foto" src="assets/imagens/Clarice.png" alt="">
+                        </div>
+
+                        <div class="flip-verso">
+                            <img class="foto" id="shrek" src="assets/imagens/shrek-mandrake.jpg" alt="">
+                        </div>
+                    </div>    
+            </div>
+
+                <div class="quadrado">
+                    <img class="star6" src="assets/imagens/Star 4.png" alt="">
+
+                    <div class="musica">
+
+                        <img id="capasCla" src="assets/imagens/Sabrina-emails.png" alt="">
+                        
+                        <div class="nome">
+                            <h3 id="nomeMusicaCla">Fast Times</h3>
+                            <h6 id="nomeCantorCla">Sabrina Carpenter</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="objetos">
+                        <div class="linha-musica"></div>
+
+                        <div class="botoes-player">
+                            <div class="pula-esquerda" onclick="BotaoCla('capasCla', 'nomeMusicaCla', 'nomeCantorCla', -1)">
+                                <div class="seta1"></div>
+                                <div class="seta2"></div>
+                            </div>
+
+                            <div class="play">
+                                <div class="ret1"></div>
+                                <div class="ret2"></div>
+                            </div>
+
+                            <div class="pula-direita" onclick="BotaoCla('capasCla', 'nomeMusicaCla', 'nomeCantorCla', 1)">
+                                <div class="seta3"></div>
+                                <div class="seta4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divisor"></div>
+
+            <div class="player" id="Impar">
+
+                <div class="flip-ju">
+                    <div class="flip-dentro">
+                        <div class="flip-frente">
+                            <img class="foto" src="assets/imagens/Julia.jpeg" alt="">
+                        </div>
+
+                        <div class="flip-verso">
+                            <img class="foto" src="assets/imagens/crying.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quadrado">
+                    <img class="star6" src="assets/imagens/Star 4.png" alt="">
+
+                    <div class="musica">
+
+                        <img id="capasJulia" src="assets/imagens/Casual-Chappell.png" alt="">
+                        
+                        <div class="nome">
+                            <h3 id="nomeMusicaJulia">Casual</h3>
+                            <h6 id="nomeCantorJulia">Chappell Roan</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="objetos">
+                        <div class="linha-musica"></div>
+
+                        <div class="botoes-player">
+                            <div class="pula-esquerda" onclick="BotaoJulia('capasJulia', 'nomeMusicaJulia', 'nomeCantorJulia', -1)">
+                                <div class="seta1"></div>
+                                <div class="seta2"></div>
+                            </div>
+
+                            <div class="play">
+                                <div class="ret1"></div>
+                                <div class="ret2"></div>
+                            </div>
+
+                            <div class="pula-direita" onclick="BotaoJulia('capasJulia', 'nomeMusicaJulia', 'nomeCantorJulia', 1)">
+                                <div class="seta3"></div>
+                                <div class="seta4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divisor"></div>
+
+            <div class="player">
+
+                <div class="flip-nat" >
+                    <div class="flip-dentro">
+                        <div class="flip-frente">
+                            <img class="foto" src="assets/imagens/Natalia.jpg" alt="">
+                        </div>
+
+                        <div class="flip-verso">
+                            <img class="foto" src="assets/imagens/emo-kitty.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quadrado">
+                    <img class="star6" src="assets/imagens/Star 4.png" alt="">
+
+                    <div class="musica">
+
+                        <img id="capasNat" src="assets/imagens/MyChemicalRomance.png" alt="">
+                        
+                        <div class="nome">
+                            <h3 id="nomeMusicaNat">I Don't Love You</h3>
+                            <h6 id="nomeCantorNat">My Chemical Romance</h6>
+                        </div>
+
+                    </div>
+
+                    <div class="objetos">
+                        <div class="linha-musica"></div>
+
+                        <div class="botoes-player">
+                            <div class="pula-esquerda" onclick="BotaoNat('capasNat', 'nomeMusicaNat', 'nomeCantorNat', -1)">
+                                <div class="seta1"></div>
+                                <div class="seta2"></div>
+                            </div>
+
+                            <div class="play">
+                                <div class="ret1"></div>
+                                <div class="ret2"></div>
+                            </div>
+
+                            <div class="pula-direita" onclick="BotaoNat('capasNat', 'nomeMusicaNat', 'nomeCantorNat', 1)">
+                                <div class="seta3"></div>
+                                <div class="seta4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Todos os direitos reservados.
+    </footer>
+
+    <script src="playlist.js"></script>
+
+</body>
+
+</html>
